@@ -274,19 +274,6 @@ input[type=search] {
     margin-top: 60px;
 }
 
-.fetured>a {
-    width: 212px;
-    height: 48px;
-    font-size: 16px;
-    font-weight: 700;
-    line-height: 54px;
-    /* Text style for "B, rowse A" */
-    letter-spacing: 0.4px;
-    color: #ffffff;
-    margin: 0px auto;
-    margin-top: 58px;
-}
-
 .fetured>h4 {
     color: #222222;
     font-size: 30px;
@@ -373,6 +360,14 @@ input[type=search] {
 
 .product-add:hover {
     box-shadow: 0 0 5px #fff;
+}
+
+.fetured a.btn {
+    width: 212px;
+    height: 48px;
+    background-color: #f16d7f;
+    margin: 0 auto;
+    margin-top: 79px;
 }
 
 .offer-for-women {
