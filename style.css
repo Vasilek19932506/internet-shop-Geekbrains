@@ -22,7 +22,12 @@ header {
     justify-content: space-between;
 }
 
-.header__left h2,
+.header__left a {
+    display: flex;
+    align-items: center;
+}
+
+.header__left a h2,
 .footer-content-logo h2 {
     width: 93px;
     height: 19px;
@@ -35,7 +40,7 @@ header {
     margin-left: 13px;
 }
 
-.header__left h2 span,
+.header__left a h2 span,
 .footer-content-logo h2 span {
     color: #f16d7f;
     font-weight: 400;
@@ -655,6 +660,7 @@ input[type=submit] {
     line-height: 26px;
     text-transform: uppercase;
     letter-spacing: 0.45px;
+    width: 33.3%;
 }
 
 .menu {
@@ -665,6 +671,7 @@ input[type=submit] {
 
 .menu>ul {
     list-style-type: none;
+    width: 33.3%;
 }
 
 .menu>ul>li>a {
