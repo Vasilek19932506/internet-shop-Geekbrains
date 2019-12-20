@@ -322,26 +322,6 @@ input[type=search] {
     justify-content: center;
 }
 
-.picture1 {
-    background: url(img/number1.jpg) center no-repeat;
-}
-
-.background-image>a {
-    width: 123px;
-    height: 39px;
-    border: 1px solid #ffffff;
-    color: #ffffff;
-    display: block;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    display: none;
-}
-
-.background-image>a>img {
-    margin-right: 8px;
-}
-
 .fetured-item:hover {
     box-shadow: 0 5px 8px rgba(0, 0, 0, 0.16);
     background-color: #ffffff;
