@@ -46,6 +46,19 @@ header {
     align-items: center;
     justify-content: space-between;
     margin-left: 37px;
+    position: relative;
+}
+
+.search {
+    border: none;
+    outline: none;
+    height: 38px;
+    width: 38px;
+    position: absolute;
+    right: 0px;
+    border-left: 1px solid #e8e8e8;
+    background: url(img/search.png) center no-repeat;
+    cursor: pointer;
 }
 
 .form__btn {
