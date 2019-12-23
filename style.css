@@ -74,6 +74,16 @@ header {
     position: relative;
 }
 
+.drop-browse {
+    width: 262px;
+    background-color: #fff;
+    position: absolute;
+}
+
+.drop-browse>h3:last-of-type {
+    padding-top: 20px;
+}
+
 .search {
     border: none;
     outline: none;
@@ -93,17 +103,29 @@ header {
     border: 1px solid #e6e6e6;
     background-color: #cdcdcc;
     background-image: linear-gradient(to bottom, #f9f9f9 0%, #f5f5f5 100%);
-    color: #222222;
-    font-family: Lato;
-    font-size: 14px;
-    font-weight: 300;
-    line-height: 32px;
-    /* Text style for "B, rowse" */
-    letter-spacing: 0.35px;
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
+    z-index: 1;
 }
+
+.form__btn>summary {
+    color: #222222;
+    font-size: 14px;
+    font-weight: 300;
+    /* Text style for "B, rowse" */
+    letter-spacing: 0.35px;
+    padding: 11px;
+}
+
+.form__btn>summary::after {
+    content: '\25B6';
+    padding-left: 0.5em;
+    color: #838383;
+    font-size: 9px;
+}
+
 
 .form__btn>img {
     margin-left: 8px;
@@ -152,7 +174,11 @@ input[type=search] {
     margin-left: 8px;
 }
 
-.float__right>img {
+.float__right>a.cart-link {
+    margin-right: 26px;
+}
+
+.float__right>a.card-link:hover {
     margin-right: 26px;
 }
 

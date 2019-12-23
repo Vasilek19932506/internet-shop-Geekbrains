@@ -22,14 +22,48 @@
                             <h2>BRAN<span>D</span></h2>
                         </a>
                         <form action="#" method="#" class="header__form">
-                            <button class="form__btn">Browse <img src="img/стрелочка_кнопка.png" alt="Стрелочка">
-                            </button>
+                            <details class="form__btn">
+                                <summary>Browse</summary>
+                                <div class="drop-flex drop-browse">
+                                    <h3>Women</h3>
+                                    <ul class="drop-ul">
+                                        <li><a href="#">Dresses</a></li>
+                                        <li><a href="#">Tops</a></li>
+                                        <li><a href="#">Sweaters/Knits</a></li>
+                                        <li><a href="#">Jackets/Coats</a></li>
+                                        <li><a href="#">Blazers</a></li>
+                                        <li><a href="#">Denim</a></li>
+                                        <li><a href="#">Leggings/Pants</a></li>
+                                        <li><a href="#">Skirts/Shorts</a></li>
+                                        <li><a href="#">Accessories</a></li>
+                                    </ul>
+                                    <h3>Men</h3>
+                                    <ul class="drop-ul">
+                                        <li><a href="#">Tees/Tank tops</a></li>
+                                        <li><a href="#">Shirts/Polos</a></li>
+                                        <li><a href="#">Sweaters</a></li>
+                                        <li><a href="#">Sweatshirts/Hoodies</a></li>
+                                        <li><a href="#">Jackets/vests</a></li>
+                                    </ul>
+                                </div>
+                            </details>
                             <input type="search" name="browse" placeholder="Search for Item...">
                             <button type="submit" class="search"></button>
                         </form>
                     </div>
                     <div class="float__right">
-                        <img src="img/cart.svg" alt="Иконка корзины">
+                        <a href="#" class="cart-link"><img src="img/cart.svg" alt="Иконка корзины">
+                            <div class="drop-cart">
+                                <div class="drop-cart-item"></div>
+                                <div class="drop-cart-item"></div>
+                                <div class="drop-cart-item">
+                                    <p>TOTAL</p>
+                                    <P class="drop-cart-item-price">$500.00</P>
+                                </div>
+                                <a href="#" class="drop-cart-link">Checkout</a>
+                                <a href="#" class="drop-cart-link">Go to cart</a>
+                            </div>
+                        </a>
                         <a href="#" class="btn">My Account <img src="img/стрелочка.png" alt="Стрелочка"></a>
                     </div>
                 </div>
