@@ -1143,6 +1143,7 @@ input[type=submit] {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    max-width: 1600px;
 }
 
 .new-arrivals>h1 {
