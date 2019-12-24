@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=Lato:300i,400,700,900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/151988c505.js" crossorigin="anonymous"></script>
     <title>Product</title>
 </head>
 
@@ -22,21 +23,44 @@
                             <h2>BRAN<span>D</span></h2>
                         </a>
                         <form action="#" method="#" class="header__form">
-                            <button class="form__btn">Browse <img src="img/стрелочка_кнопка.png" alt="Стрелочка">
-                            </button>
+                            <details class="form__btn">
+                                <summary>Browse</summary>
+                                <div class="drop-flex drop-browse">
+                                    <h3>Women</h3>
+                                    <ul class="drop-ul">
+                                        <li><a href="#">Dresses</a></li>
+                                        <li><a href="#">Tops</a></li>
+                                        <li><a href="#">Sweaters/Knits</a></li>
+                                        <li><a href="#">Jackets/Coats</a></li>
+                                        <li><a href="#">Blazers</a></li>
+                                        <li><a href="#">Denim</a></li>
+                                        <li><a href="#">Leggings/Pants</a></li>
+                                        <li><a href="#">Skirts/Shorts</a></li>
+                                        <li><a href="#">Accessories</a></li>
+                                    </ul>
+                                    <h3>Men</h3>
+                                    <ul class="drop-ul">
+                                        <li><a href="#">Tees/Tank tops</a></li>
+                                        <li><a href="#">Shirts/Polos</a></li>
+                                        <li><a href="#">Sweaters</a></li>
+                                        <li><a href="#">Sweatshirts/Hoodies</a></li>
+                                        <li><a href="#">Jackets/vests</a></li>
+                                    </ul>
+                                </div>
+                            </details>
                             <input type="search" name="browse" placeholder="Search for Item...">
                             <button type="submit" class="search"></button>
                         </form>
                     </div>
                     <div class="float__right">
-                        <img src="img/cart.svg" alt="Иконка корзины">
+                        <a href="#" class="cart-link" id="cart-link"><img src="img/cart.svg" alt="Иконка корзины"></a>
                         <a href="#" class="btn">My Account <img src="img/стрелочка.png" alt="Стрелочка"></a>
                     </div>
                 </div>
                 <nav class="header-bottom сenter">
-                    <ul class="main-menu">
+                    <ul class="main-menu product-links">
                         <li> <a href="#">Home</a></li>
-                        <li> <a href="#" class="active-main-link">Men</a> </li>
+                        <li><a href="#">Men</a></li>
                         <li> <a href="#">Women</a> </li>
                         <li> <a href="#">Kids</a> </li>
                         <li> <a href="#">Accoseriese</a> </li>
@@ -243,7 +267,81 @@
                                 </div>
                             </div>
                         </section>
+                        <div class="product-items-bottom">
+                            <div class="pagination">
+                                <a href="#" class="prev disabled">
+                                    <i class="fas fa-chevron-left"></i>
+                                </a>
+                                <a href="#" class="current">1</a>
+                                <a href="#">2</a>
+                                <a href="#">3</a>
+                                <a href="#">4</a>
+                                <a href="#">5</a>
+                                <a href="#">6</a>
+                                <span class="
+                                ellipsis">&hellip;</span>
+                                <a href="#">20</a>
+                                <a href="#" class="next active">
+                                    <i class="fas fa-chevron-right"></i>
+                                </a>
+                            </div>
+                            <a href="#" class="view-all">View All</a>
+                        </div>
                     </section>
+                </div>
+                <section class="advantages center max-width">
+                    <div class="advantages-item">
+                        <img src="img/icons1.png" alt="Иконка">
+
+                        <div class="advantages-content">
+                            <h3>Free Delivery</h3>
+                            <p>Worldwide delivery on all. Authorit tively morph next-generation innov tion with
+                                extensive
+                                models.</p>
+                        </div>
+                    </div>
+                    <div class="advantages-item">
+                        <img src="img/icons2.png" alt="Иконка">
+                        <div class="advantages-content">
+                            <h3>Sales & discounts</h3>
+                            <p>Worldwide delivery on all. Authorit tively morph next-generation innov tion with
+                                extensive
+                                models.</p>
+                        </div>
+                    </div>
+                    <div class="advantages-item">
+                        <img src="img/icons3.png" alt="Иконка">
+                        <div class="advantages-content">
+                            <h3>Quality assurance</h3>
+                            <p>Worldwide delivery on all. Authorit tively morph next-generation innov tion with
+                                extensive
+                                models.</p>
+                        </div>
+                    </div>
+                </section>
+                <section class="subscribe sub-product center">
+                    <div class="subscribe-left">
+                        <img src="img/Layer_40.png" alt="Отзыв">
+                        <div class="sub-content1">
+                            <p>“Vestibulum quis porttitor dui! Quisque viverra nunc mi,
+                                a pulvinar purus condimentum a. Aliquam condimentum mattis neque sed pretium”</p>
+                            <h4>Bin Burhan</h4>
+                            <h5>Dhaka, Bd</h5>
+                        </div>
+                    </div>
+                    <div class="subscribe-right">
+                        <div class="sub-content2">
+                            <h3>Subscribe</h3>
+                            <h4>FOR OUR NEWLETTER AND PROMOTION</h4>
+                            <form action="#" method="#">
+                                <input type="email" name="email" placeholder="Enter Your Email">
+                                <input type="submit" name="submit" value="Subscribe">
+                        </div>
+                        </form>
+                    </div>
+                </section>
+
+
             </main>
         </div>
         <footer>
@@ -253,16 +351,13 @@
                         <a href="#"><img src="img/logo.png" alt="Логотип"></a>
                         <h2>BRAN<span>D</span></h2>
                     </div>
-                    <p>Objectively transition extensive data rather than cross functional solutions.
-                        Monotonectally
-                        syndicate multidisciplinary materials before go forward benefits. Intrinsicly
-                        syndicate an
+                    <p>Objectively transition extensive data rather than cross functional solutions. Monotonectally
+                        syndicate multidisciplinary materials before go forward benefits. Intrinsicly syndicate an
                         expanded
                         array of processes and cross-unit partnerships.</p>
 
                     <p>Efficiently plagiarize 24/365 action items and focused infomediaries.
-                        Distinctively seize superior initiatives for wireless technologies. Dynamically
-                        optimize.</p>
+                        Distinctively seize superior initiatives for wireless technologies. Dynamically optimize.</p>
                 </div>
                 <div class="footer-menu">
                     <div class="menu-header">
@@ -298,11 +393,19 @@
             <div class="footer-bottom center">
                 <p>© 2017 Brand All Rights Reserved.</p>
                 <div class="social-icons">
-                    <a href="https://www.facebook.com" class="icon fb"></a>
-                    <a href="https://twitter.com" class="icon tw"></a>
-                    <a href="https://www.instagram.com" class="icon in"></a>
+                    <a href="https://www.facebook.com" class="icon fb">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="https://twitter.com" class="icon tw">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="https://ru.linkedin.com" class="icon in">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
                     <a href="https://www.reddit.com" class="icon rid"></a>
-                    <a href="https://accounts.google.com" class="icon gl"></a>
+                    <a href="https://accounts.google.com" class="icon gl">
+                        <i class="fab fa-google-plus-g"></i>
+                    </a>
                 </div>
             </div>
         </footer>
