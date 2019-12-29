@@ -16,6 +16,7 @@
 @pale-gray: #ededed;
 @gray: #c0c0c0;
 @darken-gray: #646464;
+@paragraphe-color: #9f9f9f;
 @400: 400;
 
 
@@ -468,6 +469,120 @@ body {
             span {
                 color: @pink;
                 letter-spacing: 1px;
+            }
+        }
+    }
+}
+
+.products {
+    padding-top: 98px;
+    min-height: 921px;
+    display: @flex;
+
+    &-left {
+        width: 49.12%;
+        min-height: 863px;
+
+        &-item1 {
+            width: 100%;
+            min-height: 542px;
+            background-image: url(img/product-men.jpg);
+            background-repeat: no-repeat;
+        }
+
+        &-item2 {
+            margin-top: 20px;
+            width: 100%;
+            min-height: 261px;
+            background-image: url(img/product-accesories.jpg), url(img/fon-product-accesories.jpg);
+            background-repeat: no-repeat, no-repeat;
+            background-position: center right, center;
+        }
+    }
+
+    &-right {
+        width: 49.12%;
+        min-height: 863px;
+        margin-left: 20px;
+
+        &-item1 {
+            width: 100%;
+            min-height: 261px;
+            background-image: url(img/product-women.jpg);
+            background-repeat: no-repeat;
+        }
+
+        &-item2 {
+            width: 100%;
+            margin-top: 20px;
+            min-height: 542px;
+            background-image: url(img/product-child.jpg);
+            background-repeat: no-repeat;
+        }
+    }
+
+    &-header {
+        background-color: @white;
+        display: inline-block;
+        margin-top: 26px;
+        padding: 16px 20px;
+
+        h3 {
+            color: @pink;
+            font-size: 30px;
+            letter-spacing: 0.75px;
+        }
+
+        h4 {
+            color: @black;
+            font-size: 18px;
+            font-weight: 400;
+            text-transform: uppercase;
+            letter-spacing: 0.45px;
+        }
+    }
+}
+
+.fetured {
+    text-align: center;
+    margin-top: 60px;
+
+    h2 {
+        color: @black;
+        font-size: 30px;
+        font-weight: 700;
+        letter-spacing: 0.75px;
+    }
+
+    p {
+        color: @paragraphe-color;
+        font-size: 14px;
+        font-weight: 400;
+        letter-spacing: 0.35px;
+        margin-bottom: 60px;
+        padding-top: 16px;
+    }
+
+    h4 {
+        color: @black;
+        font-size: 30px;
+        font-weight: 700;
+        letter-spacing: 0.75px;
+    }
+
+    &-items {
+        display: @flex;
+        flex-wrap: wrap;
+        justify-content: @space-between;
+
+        .fetured-item {
+            min-height: 364px;
+            min-width: 263px;
+            position: relative;
+
+            &:hover {
+                box-shadow: 0 5px 8px rgba(0, 0, 0, 0.16);
+                background-color: @white;
             }
         }
     }
