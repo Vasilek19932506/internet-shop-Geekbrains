@@ -6,7 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="style.css">
+
     <link href="https://fonts.googleapis.com/css?family=Lato:300i,400,700,900&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/151988c505.js" crossorigin="anonymous"></script>
     <title>Product</title>
@@ -15,19 +17,19 @@
 <body>
     <div class="wrapper">
         <div class="content">
-            <header class="header">
+            <header>
                 <div class="header-top center">
-                    <div class="header-top-left">
-                        <a href="#">
+                    <div class="header-top-left logo">
+                        <a href="index.html">
                             <img src="img/logo.png" alt="Логотип">
                             <h2>BRAN<span>D</span></h2>
                         </a>
                         <form action="#" method="#" class="header-top-left-form">
                             <details class="header-top-left-form-btn">
                                 <summary>Browse</summary>
-                                <div class="drop-flex drop-browse">
+                                <div class="drop-browse">
                                     <h3>Women</h3>
-                                    <ul class="drop-browse-ul">
+                                    <ul class="drop-ul">
                                         <li><a href="#">Dresses</a></li>
                                         <li><a href="#">Tops</a></li>
                                         <li><a href="#">Sweaters/Knits</a></li>
@@ -39,7 +41,7 @@
                                         <li><a href="#">Accessories</a></li>
                                     </ul>
                                     <h3>Men</h3>
-                                    <ul class="drop-browse-ul">
+                                    <ul class="drop-ul">
                                         <li><a href="#">Tees/Tank tops</a></li>
                                         <li><a href="#">Shirts/Polos</a></li>
                                         <li><a href="#">Sweaters</a></li>
@@ -49,29 +51,165 @@
                                 </div>
                             </details>
                             <input type="search" name="browse" placeholder="Search for Item...">
-                            <button type="submit" class="search"></button>
+                            <button type="submit" class="btn-search"></button>
                         </form>
                     </div>
                     <div class="header-top-right">
-                        <a href="#" class="cart-link" id="cart-link"><img src="img/cart.svg" alt="Иконка корзины"></a>
+                        <a href="#" class="cart-link"><img src="img/cart.svg" alt="Иконка корзины"> </a>
+                        <div class="drop-cart">
+                            <div class="drop-cart-item">
+                                <img src="img/Layer_43-min.jpg" alt="Мужик">
+                                <div class="drop-cart-item-content">
+                                    <h4>Rebox Zane</h4>
+                                    <div class="stars">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star-half-alt"></i>
+                                    </div>
+                                    <div class="cross">
+                                        <i class="fas fa-times-circle"></i>
+                                    </div>
+                                    <p>1 x $250</p>
+                                </div>
+                            </div>
+                            <div class="drop-cart-item">
+                                <img src="img/Layer_44-min.jpg" alt="Женщина">
+                                <div class="drop-cart-item-content">
+                                    <h4>Rebox Zane</h4>
+                                    <div class="stars">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star-half-alt"></i>
+                                    </div>
+                                    <div class="cross">
+                                        <i class="fas fa-times-circle"></i>
+                                    </div>
+                                    <p>1 x $250</p>
+                                </div>
+                            </div>
+                            <div class="drop-cart-item2">
+                                <p>TOTAL</p>
+                                <P class="drop-cart-item-price">$500.00</P>
+                            </div>
+                            <a href="#" class="drop-cart-link link-red">Checkout</a>
+                            <a href="#" class="drop-cart-link link-gray">Go to cart</a>
+                        </div>
                         <a href="#" class="btn">My Account <img src="img/стрелочка.png" alt="Стрелочка"></a>
                     </div>
                 </div>
                 <nav class="header-bottom сenter">
-                    <ul class="main-menu product-links">
+                    <ul class="main-menu fetured-item-content-links">
                         <li> <a href="#">Home</a></li>
-                        <li><a href="#">Men</a></li>
+                        <li>
+                            <a href="#">Men
+                                <div class="drop">
+                                    <div class="drop-flex">
+                                        <h3>Men</h3>
+                                        <ul class="drop-ul">
+                                            <li><a href="#">Dresses</a></li>
+                                            <li><a href="#">Tops</a></li>
+                                            <li><a href="#">Sweaters/Knits</a></li>
+                                            <li><a href="#">Jackets/Coats</a></li>
+                                            <li><a href="#">Blazers</a></li>
+                                            <li><a href="#">Denim</a></li>
+                                            <li><a href="#">Leggings/Pants</a></li>
+                                            <li><a href="#">Skirts/Shorts</a></li>
+                                            <li><a href="#">Accessories</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="drop-flex">
+                                        <h3>Men</h3>
+                                        <ul class="drop-ul">
+                                            <li><a href="#">Dresses</a></li>
+                                            <li><a href="#">Tops</a></li>
+                                            <li><a href="#">Sweaters/Knits</a></li>
+                                            <li><a href="#">Jackets/Coats</a></li>
+                                        </ul>
+                                        <h3 class="drop-flex-h3">Men</h3>
+                                        <ul class="drop-ul">
+                                            <li><a href="#">Dresses</a></li>
+                                            <li><a href="#">Tops</a></li>
+                                            <li><a href="#">Sweaters/Knits</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="drop-flex">
+                                        <h3>Men</h3>
+                                        <ul class="drop-ul">
+                                            <li><a href="#">Dresses</a></li>
+                                            <li><a href="#">Tops</a></li>
+                                            <li><a href="#">Sweaters/Knits</a></li>
+                                            <li><a href="#">Jackets/Coats</a></li>
+                                        </ul>
+                                        <div class="drop-flex-content"><img src="img/Layer_42-min.jpg"
+                                                alt="Мужик в очках">
+                                            <p>Super
+                                                sale!</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
                         <li> <a href="#">Women</a> </li>
                         <li> <a href="#">Kids</a> </li>
                         <li> <a href="#">Accoseriese</a> </li>
                         <li> <a href="#">Featured</a> </li>
                         <li> <a href="#">Hot</a> </li>
-                        <li> <a href="#">Deals</a> </li>
+                        <li> <a href="#">Deals
+                                <div class="drop drop-last">
+                                    <div class="drop-flex">
+                                        <h3>Men</h3>
+                                        <ul class="drop-ul">
+                                            <li><a href="#">Dresses</a></li>
+                                            <li><a href="#">Tops</a></li>
+                                            <li><a href="#">Sweaters/Knits</a></li>
+                                            <li><a href="#">Jackets/Coats</a></li>
+                                            <li><a href="#">Blazers</a></li>
+                                            <li><a href="#">Denim</a></li>
+                                            <li><a href="#">Leggings/Pants</a></li>
+                                            <li><a href="#">Skirts/Shorts</a></li>
+                                            <li><a href="#">Accessories</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="drop-flex">
+                                        <h3>Men</h3>
+                                        <ul class="drop-ul">
+                                            <li><a href="#">Dresses</a></li>
+                                            <li><a href="#">Tops</a></li>
+                                            <li><a href="#">Sweaters/Knits</a></li>
+                                            <li><a href="#">Jackets/Coats</a></li>
+                                        </ul>
+                                        <h3 class="drop-flex-h3">Men</h3>
+                                        <ul class="drop-ul">
+                                            <li><a href="#">Dresses</a></li>
+                                            <li><a href="#">Tops</a></li>
+                                            <li><a href="#">Sweaters/Knits</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="drop-flex">
+                                        <h3>Men</h3>
+                                        <ul class="drop-ul">
+                                            <li><a href="#">Dresses</a></li>
+                                            <li><a href="#">Tops</a></li>
+                                            <li><a href="#">Sweaters/Knits</a></li>
+                                            <li><a href="#">Jackets/Coats</a></li>
+                                        </ul>
+                                        <div class="drop-flex-content"><img src="img/Layer_42-min.jpg"
+                                                alt="Мужик в очках">
+                                            <p>Super
+                                                sale!</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a> </li>
                     </ul>
                 </nav>
             </header>
             <main>
-                <section class="new-arrivals center max-width">
+                <section class="new-arrivals center max-width-center">
                     <h1>New Arrivals</h1>
                     <nav class="breadcrumbs">
                         <a href="index.html">Home</a>
@@ -80,8 +218,8 @@
                     </nav>
                 </section>
                 <div class="box center">
-                    <aside class="product-sidebar">
-                        <details class="details-product">
+                    <aside>
+                        <details>
                             <summary>Category</summary>
                             <ul>
                                 <li><a href="#">Accessories</a></li>
@@ -99,7 +237,7 @@
                                 <li><a href="#">Tanks</a></li>
                             </ul>
                         </details>
-                        <details class="details-product">
+                        <details>
                             <summary>BRAND</summary>
                             <ul>
                                 <li><a href="#">Accessories</a></li>
@@ -117,7 +255,7 @@
                                 <li><a href="#">Tanks</a></li>
                             </ul>
                         </details>
-                        <details class="details-product">
+                        <details>
                             <summary>dESIGNER</summary>
                             <ul>
                                 <li><a href="#">Accessories</a></li>
@@ -175,95 +313,113 @@
                         <div class="product-sort">
 
                         </div>
-                        <section class="product-items">
-                            <div class="product-item">
-                                <a href="#" class="product-img number1"><img src="img/man_1-min.jpg" alt="Man"></a>
-                                <div class="product-content">
-                                    <a href="#" class="product-link">Mango People T-shirt</a>
+                        <section class="fetured-items page-products">
+                            <div class="fetured-item">
+                                <a href="#" class="featured-item-img"><img src="img/man_1-min.jpg" alt="Man"></a>
+                                <div class="fetured-item-content">
+                                    <a href="#" class="fetured-item-content-link">Mango People T-shirt</a>
                                     <p>$52.00</p>
-                                    <a href="#" class="product-add">Add to Cart</a>
-                                    <a href="#" class="product-add-2"> <img src="img/Forma_1.png" alt="Форма"></a>
-                                    <a href="#" class="product-add-3"> <img src="img/heart.png" alt="Сердце"></a>
+                                    <a href="#" class="fetured-item-content-add">Add to Cart</a>
+                                    <a href="#" class="fetured-item-content-add-2"> <img src="img/Forma_1.png"
+                                            alt="Форма"></a>
+                                    <a href="#" class="fetured-item-content-add-3"> <img src="img/heart.png"
+                                            alt="Сердце"></a>
                                 </div>
                             </div>
-                            <div class="product-item">
-                                <a href="#" class="product-img"><img src="img/man_2-min.jpg" alt="Man"></a>
-                                <div class="product-content">
-                                    <a href="#" class="product-link">Mango People T-shirt</a>
+                            <div class="fetured-item">
+                                <a href="#" class="featured-item-img"><img src="img/man_2-min.jpg" alt="Man"></a>
+                                <div class="fetured-item-content">
+                                    <a href="#" class="fetured-item-content-link">Mango People T-shirt</a>
                                     <p>$52.00</p>
-                                    <a href="#" class="product-add">Add to Cart</a>
-                                    <a href="#" class="product-add-2"> <img src="img/Forma_1.png" alt="Форма"></a>
-                                    <a href="#" class="product-add-3"> <img src="img/heart.png" alt="Сердце"></a>
+                                    <a href="#" class="fetured-item-content-add">Add to Cart</a>
+                                    <a href="#" class="fetured-item-content-add-2"> <img src="img/Forma_1.png"
+                                            alt="Форма"></a>
+                                    <a href="#" class="fetured-item-content-add-3"> <img src="img/heart.png"
+                                            alt="Сердце"></a>
                                 </div>
                             </div>
-                            <div class="product-item">
-                                <a href="#" class="product-img"><img src="img/man_3-min.jpg" alt="Man"></a>
-                                <div class="product-content">
-                                    <a href="#" class="product-link">Mango People T-shirt</a>
+                            <div class="fetured-item">
+                                <a href="#" class="featured-item-img"><img src="img/man_3-min.jpg" alt="Man"></a>
+                                <div class="fetured-item-content">
+                                    <a href="#" class="fetured-item-content-link">Mango People T-shirt</a>
                                     <p>$52.00</p>
-                                    <a href="#" class="product-add">Add to Cart</a>
-                                    <a href="#" class="product-add-2"> <img src="img/Forma_1.png" alt="Форма"></a>
-                                    <a href="#" class="product-add-3"> <img src="img/heart.png" alt="Сердце"></a>
+                                    <a href="#" class="fetured-item-content-add">Add to Cart</a>
+                                    <a href="#" class="fetured-item-content-add-2"> <img src="img/Forma_1.png"
+                                            alt="Форма"></a>
+                                    <a href="#" class="fetured-item-content-add-3"> <img src="img/heart.png"
+                                            alt="Сердце"></a>
                                 </div>
                             </div>
-                            <div class="product-item">
-                                <a href="#" class="product-img number4"><img src="img/man_4.png" alt="Man"></a>
-                                <div class="product-content">
-                                    <a href="#" class="product-link">Mango People T-shirt</a>
+                            <div class="fetured-item">
+                                <a href="#" class="featured-item-img"><img src="img/man_4.png" alt="Man"></a>
+                                <div class="fetured-item-content">
+                                    <a href="#" class="fetured-item-content-link">Mango People T-shirt</a>
                                     <p>$52.00</p>
-                                    <a href="#" class="product-add">Add to Cart</a>
-                                    <a href="#" class="product-add-2"> <img src="img/Forma_1.png" alt="Форма"></a>
-                                    <a href="#" class="product-add-3"> <img src="img/heart.png" alt="Сердце"></a>
+                                    <a href="#" class="fetured-item-content-add">Add to Cart</a>
+                                    <a href="#" class="fetured-item-content-add-2"> <img src="img/Forma_1.png"
+                                            alt="Форма"></a>
+                                    <a href="#" class="fetured-item-content-add-3"> <img src="img/heart.png"
+                                            alt="Сердце"></a>
                                 </div>
                             </div>
-                            <div class="product-item">
-                                <a href="#" class="product-img number5"><img src="img/man_5-min.jpg" alt="Man"></a>
-                                <div class="product-content">
-                                    <a href="#" class="product-link">Mango People T-shirt</a>
+                            <div class="fetured-item">
+                                <a href="#" class="featured-item-img"><img src="img/man_5-min.jpg" alt="Man"></a>
+                                <div class="fetured-item-content">
+                                    <a href="#" class="fetured-item-content-link">Mango People T-shirt</a>
                                     <p>$52.00</p>
-                                    <a href="#" class="product-add">Add to Cart</a>
-                                    <a href="#" class="product-add-2"> <img src="img/Forma_1.png" alt="Форма"></a>
-                                    <a href="#" class="product-add-3"> <img src="img/heart.png" alt="Сердце"></a>
+                                    <a href="#" class="fetured-item-content-add">Add to Cart</a>
+                                    <a href="#" class="fetured-item-content-add-2"> <img src="img/Forma_1.png"
+                                            alt="Форма"></a>
+                                    <a href="#" class="fetured-item-content-add-3"> <img src="img/heart.png"
+                                            alt="Сердце"></a>
                                 </div>
                             </div>
-                            <div class="product-item">
-                                <a href="#" class="product-img number6"><img src="img/man_6.png" alt="Man"></a>
-                                <div class="product-content">
-                                    <a href="#" class="product-link">Mango People T-shirt</a>
+                            <div class="fetured-item">
+                                <a href="#" class="featured-item-img"><img src="img/man_6.png" alt="Man"></a>
+                                <div class="fetured-item-content">
+                                    <a href="#" class="fetured-item-content-link">Mango People T-shirt</a>
                                     <p>$52.00</p>
-                                    <a href="#" class="product-add">Add to Cart</a>
-                                    <a href="#" class="product-add-2"> <img src="img/Forma_1.png" alt="Форма"></a>
-                                    <a href="#" class="product-add-3"> <img src="img/heart.png" alt="Сердце"></a>
+                                    <a href="#" class="fetured-item-content-add">Add to Cart</a>
+                                    <a href="#" class="fetured-item-content-add-2"> <img src="img/Forma_1.png"
+                                            alt="Форма"></a>
+                                    <a href="#" class="fetured-item-content-add-3"> <img src="img/heart.png"
+                                            alt="Сердце"></a>
                                 </div>
                             </div>
-                            <div class="product-item">
-                                <a href="#" class="product-img"><img src="img/man_7-min.jpg" alt="Man"></a>
-                                <div class="product-content">
-                                    <a href="#" class="product-link">Mango People T-shirt</a>
+                            <div class="fetured-item">
+                                <a href="#" class="featured-item-img"><img src="img/man_7-min.jpg" alt="Man"></a>
+                                <div class="fetured-item-content">
+                                    <a href="#" class="fetured-item-content-link">Mango People T-shirt</a>
                                     <p>$52.00</p>
-                                    <a href="#" class="product-add">Add to Cart</a>
-                                    <a href="#" class="product-add-2"> <img src="img/Forma_1.png" alt="Форма"></a>
-                                    <a href="#" class="product-add-3"> <img src="img/heart.png" alt="Сердце"></a>
+                                    <a href="#" class="fetured-item-content-add">Add to Cart</a>
+                                    <a href="#" class="fetured-item-content-add-2"> <img src="img/Forma_1.png"
+                                            alt="Форма"></a>
+                                    <a href="#" class="fetured-item-content-add-3"> <img src="img/heart.png"
+                                            alt="Сердце"></a>
                                 </div>
                             </div>
-                            <div class="product-item">
-                                <a href="#" class="product-img number8"><img src="img/man_8-min.jpg" alt="Man"></a>
-                                <div class="product-content">
-                                    <a href="#" class="product-link">Mango People T-shirt</a>
+                            <div class="fetured-item">
+                                <a href="#" class="featured-item-img"><img src="img/man_8-min.jpg" alt="Man"></a>
+                                <div class="fetured-item-content">
+                                    <a href="#" class="fetured-item-content-link">Mango People T-shirt</a>
                                     <p>$52.00</p>
-                                    <a href="#" class="product-add">Add to Cart</a>
-                                    <a href="#" class="product-add-2"> <img src="img/Forma_1.png" alt="Форма"></a>
-                                    <a href="#" class="product-add-3"> <img src="img/heart.png" alt="Сердце"></a>
+                                    <a href="#" class="fetured-item-content-add">Add to Cart</a>
+                                    <a href="#" class="fetured-item-content-add-2"> <img src="img/Forma_1.png"
+                                            alt="Форма"></a>
+                                    <a href="#" class="fetured-item-content-add-3"> <img src="img/heart.png"
+                                            alt="Сердце"></a>
                                 </div>
                             </div>
-                            <div class="product-item">
-                                <a href="#" class="product-img number9"><img src="img/man_9.png" alt="Man"></a>
-                                <div class="product-content">
-                                    <a href="#" class="product-link">Mango People T-shirt</a>
+                            <div class="fetured-item">
+                                <a href="#" class="featured-item-img"><img src="img/man_9.png" alt="Man"></a>
+                                <div class="fetured-item-content">
+                                    <a href="#" class="fetured-item-content-link">Mango People T-shirt</a>
                                     <p>$52.00</p>
-                                    <a href="#" class="product-add">Add to Cart</a>
-                                    <a href="#" class="product-add-2"> <img src="img/Forma_1.png" alt="Форма"></a>
-                                    <a href="#" class="product-add-3"> <img src="img/heart.png" alt="Сердце"></a>
+                                    <a href="#" class="fetured-item-content-add">Add to Cart</a>
+                                    <a href="#" class="fetured-item-content-add-2"> <img src="img/Forma_1.png"
+                                            alt="Форма"></a>
+                                    <a href="#" class="fetured-item-content-add-3"> <img src="img/heart.png"
+                                            alt="Сердце"></a>
                                 </div>
                             </div>
                         </section>
@@ -289,7 +445,7 @@
                         </div>
                     </section>
                 </div>
-                <section class="advantages center max-width">
+                <section class="advantages center max-width-center">
                     <div class="advantages-item">
                         <img src="img/icons1.png" alt="Иконка">
 
@@ -319,10 +475,10 @@
                         </div>
                     </div>
                 </section>
-                <section class="subscribe sub-product center">
+                <section class="subscribe center">
                     <div class="subscribe-left">
                         <img src="img/Layer_40.png" alt="Отзыв">
-                        <div class="sub-content1">
+                        <div class="subscribe-left-content">
                             <p>“Vestibulum quis porttitor dui! Quisque viverra nunc mi,
                                 a pulvinar purus condimentum a. Aliquam condimentum mattis neque sed pretium”</p>
                             <h4>Bin Burhan</h4>
@@ -330,7 +486,7 @@
                         </div>
                     </div>
                     <div class="subscribe-right">
-                        <div class="sub-content2">
+                        <div class="subscribe-right-content">
                             <h3>Subscribe</h3>
                             <h4>FOR OUR NEWLETTER AND PROMOTION</h4>
                             <form action="#" method="#">
@@ -340,14 +496,12 @@
                         </form>
                     </div>
                 </section>
-
-
             </main>
         </div>
-        <footer>
+        <footer class="footer max-width-center">
             <div class="footer-top center">
-                <div class="footer-content center">
-                    <div class="footer-content-logo">
+                <div class="footer-top-content center">
+                    <div class="footer-top-content-logo logo">
                         <a href="#"><img src="img/logo.png" alt="Логотип"></a>
                         <h2>BRAN<span>D</span></h2>
                     </div>
@@ -359,7 +513,7 @@
                     <p>Efficiently plagiarize 24/365 action items and focused infomediaries.
                         Distinctively seize superior initiatives for wireless technologies. Dynamically optimize.</p>
                 </div>
-                <div class="footer-menu">
+                <div class="footer-top-menu">
                     <div class="menu-header">
                         <h3>COMPANY</h3>
                         <h3>INFORMATION</h3>
@@ -393,17 +547,19 @@
             <div class="footer-bottom center">
                 <p>© 2017 Brand All Rights Reserved.</p>
                 <div class="social-icons">
-                    <a href="https://www.facebook.com" class="icon fb">
+                    <a href="https://www.facebook.com" class="icon">
                         <i class="fab fa-facebook-f"></i>
                     </a>
-                    <a href="https://twitter.com" class="icon tw">
+                    <a href="https://twitter.com" class="icon">
                         <i class="fab fa-twitter"></i>
                     </a>
-                    <a href="https://ru.linkedin.com" class="icon in">
+                    <a href="https://ru.linkedin.com" class="icon">
                         <i class="fab fa-linkedin-in"></i>
                     </a>
-                    <a href="https://www.reddit.com" class="icon rid"></a>
-                    <a href="https://accounts.google.com" class="icon gl">
+                    <a href="https://www.pinterest.ru" class="icon">
+                        <i class="fab fa-pinterest-p"></i>
+                    </a>
+                    <a href="https://accounts.google.com" class="icon">
                         <i class="fab fa-google-plus-g"></i>
                     </a>
                 </div>
