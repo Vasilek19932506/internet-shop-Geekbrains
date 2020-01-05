@@ -1,0 +1,16 @@
+.fetured-item-content-add:hover {
+  transform: scale(1.15);
+  transition-duration: 1.5s;
+}
+.header-bottom .main-menu li a:hover {
+  color: #f16d7f;
+  text-shadow: 0px 0px 10px #f16d7f;
+  transition-duration: 4s 2s;
+  transition-property: text-shadow, color;
+}
+.header-top-left-form input[type=search]:hover {
+  border: 1px solid #e4af48;
+  box-shadow: 0px 0px 10px #e4af48 inset;
+  transition-duration: 2s 3s;
+  transition-property: border, box-shadow;
+}

@@ -1,0 +1,36 @@
+@import url("_variables.less");
+
+.fetured-item-content-add {
+    &:hover {
+        transform: scale(1.15);
+        transition-duration: 1.5s;
+    }
+}
+
+.header-bottom {
+    .main-menu {
+        li {
+            a {
+                &:hover {
+                    color: @pink;
+                    text-shadow: 0px 0px 10px @pink;
+                    transition-duration: 4s 2s;
+                    transition-property: text-shadow, color;
+                }
+            }
+        }
+    }
+}
+
+.header-top {
+    &-left {
+        &-form {
+            input[type=search]:hover {
+                border: 1px solid @gold;
+                box-shadow: 0px 0px 10px @gold inset;
+                transition-duration: 2s 3s;
+                transition-property: border, box-shadow;
+            }
+        }
+    }
+}
