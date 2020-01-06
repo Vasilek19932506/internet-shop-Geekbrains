@@ -45,6 +45,17 @@
                         top: 36px;
                         left: -2px;
 
+                        &::before {
+                            content: '';
+                            display: block;
+                            width: 15px;
+                            height: 7px;
+                            background-image: url(img/Shape_3.png);
+                            position: absolute;
+                            top: -7px;
+                            left: 65px;
+                        }
+
                         &>h3 {
                             color: @lighter-black;
                             font-size: 14px;
@@ -113,33 +124,6 @@
 
         &-right {
             .flex-center-between;
-
-            .cart-link {
-                margin-right: 26px;
-                position: relative;
-                display: block;
-
-                &::before {
-                    content: '2';
-                    display: block;
-                    position: absolute;
-                    text-align: center;
-                    background-image: url(img/Ellipse_2.png);
-                    color: @white;
-                    font-size: 12px;
-                    font-weight: 700;
-                    line-height: 20px;
-                    letter-spacing: 0.3px;
-                    bottom: 17px;
-                    left: 24px;
-                    width: 19px;
-                    height: 19px;
-                }
-
-                &:hover .drop-cart {
-                    display: flex;
-                }
-            }
 
             .drop-cart {
                 display: none;
@@ -242,6 +226,36 @@
                     margin-top: 11px;
                 }
             }
+
+            .cart-link {
+                margin-right: 26px;
+                position: relative;
+                display: block;
+                z-index: 1;
+
+                &::before {
+                    content: '2';
+                    display: block;
+                    position: absolute;
+                    text-align: center;
+                    background-image: url(img/Ellipse_2.png);
+                    color: @white;
+                    font-size: 12px;
+                    font-weight: 700;
+                    line-height: 20px;
+                    letter-spacing: 0.3px;
+                    bottom: 17px;
+                    left: 24px;
+                    width: 19px;
+                    height: 19px;
+                }
+
+                &:hover .header-top-right .drop-cart {
+                    display: flex;
+                    background-color: brown;
+                }
+            }
+
         }
     }
 
