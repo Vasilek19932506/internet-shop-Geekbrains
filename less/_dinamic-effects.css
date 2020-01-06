@@ -18,3 +18,34 @@
   color: #e4af48;
   transition-duration: 2s;
 }
+.header-top-right a.btn {
+  position: relative;
+  transform: translateZ(0);
+}
+.header-top-right a.btn:hover {
+  background-color: #ffffff;
+}
+.header-top-right a.btn:hover::before {
+  transform: scaleX(1);
+  transition-timing-function: cubic-bezier(1, 2.3, 0.51, -0.95);
+}
+.header-top-right a.btn::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #f16d7f;
+  transform: scaleX(0);
+  transform-origin: 0% 50%;
+  transition-property: transform;
+  transition: 2s ease-out;
+}
+.header-bottom .main-menu > li:hover .drop {
+  display: flex;
+  transition-property: display;
+  transition-delay: 2s;
+  transition-duration: 2s;
+}

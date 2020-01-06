@@ -83,6 +83,7 @@ body {
 }
 .drop-ul {
   list-style: none;
+  padding-top: 15px;
 }
 .drop-ul li a {
   font-size: 14px;
@@ -291,6 +292,22 @@ body {
   margin-right: 26px;
   position: relative;
   display: block;
+}
+.header-top-right .cart-link::before {
+  content: '2';
+  display: block;
+  position: absolute;
+  text-align: center;
+  background-image: url(img/Ellipse_2.png);
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 20px;
+  letter-spacing: 0.3px;
+  bottom: 17px;
+  left: 24px;
+  width: 19px;
+  height: 19px;
 }
 .header-top-right .cart-link:hover .drop-cart {
   display: flex;
@@ -511,7 +528,7 @@ body {
 }
 .header-bottom .main-menu li a:hover {
   color: #f16d7f;
-  text-shadow: 0px 0px 10px #f16d7f;
+  text-shadow: 0px 0px 15px #f16d7f;
   transition-property: text-shadow, color;
   transition-duration: 4s, 2s;
 }
@@ -523,6 +540,37 @@ body {
 }
 .header-top-left-form input[type=search]:hover::placeholder {
   color: #e4af48;
+  transition-duration: 2s;
+}
+.header-top-right a.btn {
+  position: relative;
+  transform: translateZ(0);
+}
+.header-top-right a.btn:hover {
+  background-color: #ffffff;
+}
+.header-top-right a.btn:hover::before {
+  transform: scaleX(1);
+  transition-timing-function: cubic-bezier(1, 2.3, 0.51, -0.95);
+}
+.header-top-right a.btn::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #f16d7f;
+  transform: scaleX(0);
+  transform-origin: 0% 50%;
+  transition-property: transform;
+  transition: 2s ease-out;
+}
+.header-bottom .main-menu > li:hover .drop {
+  display: flex;
+  transition-property: display;
+  transition-delay: 2s;
   transition-duration: 2s;
 }
 .promo {
@@ -542,7 +590,7 @@ body {
   width: 485px;
   height: 92px;
   color: #222222;
-  font-weight: 400;
+  font-weight: 900;
   text-transform: uppercase;
   font-size: 60px;
   letter-spacing: 1.5px;
@@ -553,7 +601,7 @@ body {
 .promo-content h3 {
   color: #222222;
   font-size: 40px;
-  font-weight: 400;
+  font-weight: 900;
   text-transform: uppercase;
   letter-spacing: 1px;
   line-height: 0;
@@ -619,7 +667,7 @@ body {
 .products-header h4 {
   color: #222222;
   font-size: 18px;
-  font-weight: 400;
+  font-weight: 900;
   text-transform: uppercase;
   letter-spacing: 0.45px;
 }
@@ -630,7 +678,7 @@ body {
 .fetured h2 {
   color: #222222;
   font-size: 30px;
-  font-weight: 700;
+  font-weight: 900;
   letter-spacing: 0.75px;
 }
 .fetured p {
@@ -659,6 +707,9 @@ body {
   position: relative;
   margin-bottom: 39px;
 }
+.fetured-items .fetured-item img {
+  width: 100%;
+}
 .fetured-items .fetured-item > a {
   display: block;
   text-align: center;
@@ -671,6 +722,7 @@ body {
 }
 .fetured-items .fetured-item:hover .featured-item-img {
   filter: brightness(50%);
+  width: 100%;
 }
 .fetured-items .fetured-item:hover .fetured-item-content-add {
   display: flex;
