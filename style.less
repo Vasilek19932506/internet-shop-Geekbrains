@@ -1278,7 +1278,7 @@
     h2 {
         color: @pale-black;
         font-size: 18px;
-        font-weight: 400;
+        font-weight: 900;
         text-transform: uppercase;
         padding-bottom: 67px;
     }
@@ -1354,6 +1354,21 @@
                 color: #bcbcbc;
                 font-size: 13px;
                 font-weight: 400;
+
+                option[value=red] {
+                    position: relative;
+
+                    &::before {
+                        content: '';
+                        display: block;
+                        position: absolute;
+                        width: 12px;
+                        height: 12px;
+                        background-image: url(img/Rectangle_30.svg);
+                        top: 0;
+                        left: 0;
+                    }
+                }
             }
         }
     }
@@ -1384,7 +1399,7 @@
     h2 {
         color: @color_11;
         font-size: 24px;
-        font-weight: 400;
+        font-weight: 900;
         text-transform: uppercase;
         text-align: center;
         padding-top: 30px;

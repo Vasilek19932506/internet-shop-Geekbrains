@@ -1727,7 +1727,7 @@ body {
 .single-content h2 {
   color: #4a4a4a;
   font-size: 18px;
-  font-weight: 400;
+  font-weight: 900;
   text-transform: uppercase;
   padding-bottom: 67px;
 }
@@ -1799,6 +1799,19 @@ body {
   font-size: 13px;
   font-weight: 400;
 }
+.single-content div.single-content-filter-item select option[value=red] {
+  position: relative;
+}
+.single-content div.single-content-filter-item select option[value=red]::before {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  background-image: url(img/Rectangle_30.svg);
+  top: 0;
+  left: 0;
+}
 .single-content a {
   width: 537px;
   height: 55px;
@@ -1824,7 +1837,7 @@ body {
 .single-content-also h2 {
   color: #4d4d4d;
   font-size: 24px;
-  font-weight: 400;
+  font-weight: 900;
   text-transform: uppercase;
   text-align: center;
   padding-top: 30px;
