@@ -630,13 +630,27 @@
             padding: 10px;
             display: flex;
 
-            .sort-by {
+            &-left {
                 border: 1px solid #ebebeb;
                 background-color: @white;
                 width: 153px;
                 height: 30px;
                 .flex-center;
                 justify-content: space-around;
+
+                select {
+                    color: #6f6e6e;
+                    font-size: 14px;
+                    font-weight: 400;
+                    border: none;
+                    height: 100%;
+                    padding: 0 11px;
+                    background: url(img/arrows.png) no-repeat 85% 50%;
+                    -webkit-appearance: none;
+                    -moz-appearance: none;
+                    appearance: none;
+                    width: 50%;
+                }
 
                 p {
                     height: 100%;
@@ -645,7 +659,7 @@
                     font-weight: 400;
                     line-height: 26px;
                     text-align: center;
-                    width: 100%;
+                    width: 50%;
 
                     &:first-child {
                         border-right: 1px solid #ebebeb;
@@ -661,7 +675,7 @@
                 }
             }
 
-            .show {
+            &-right {
                 border: 1px solid #ebebeb;
                 background-color: @white;
                 width: 119px;
@@ -670,6 +684,20 @@
                 justify-content: space-around;
                 margin-left: 10px;
 
+                select {
+                    color: #6f6e6e;
+                    font-size: 14px;
+                    font-weight: 400;
+                    border: none;
+                    height: 100%;
+                    width: 50%;
+                    background: url(img/arrows.png) no-repeat 75% 50%;
+                    -webkit-appearance: none;
+                    -moz-appearance: none;
+                    appearance: none;
+                    padding: 0 11px;
+                }
+
                 p {
                     height: 100%;
                     color: #6f6e6e;
@@ -677,7 +705,7 @@
                     font-weight: 400;
                     line-height: 26px;
                     text-align: center;
-                    width: 100%;
+                    width: 50%;
 
                     &:first-child {
                         border-right: 1px solid #ebebeb;
@@ -707,6 +735,10 @@
             &:hover {
                 box-shadow: 0 0 5px @white;
             }
+
+            img {
+                width: auto;
+            }
         }
 
         .fetured-item-content-add-3 {
@@ -717,6 +749,10 @@
 
             &:hover {
                 box-shadow: 0 0 5px @white;
+            }
+
+            img {
+                width: auto;
             }
         }
 
@@ -838,7 +874,7 @@
     flex-wrap: nowrap;
     padding-top: 90px;
 
-    &>div {
+    &>div:not(:last-of-type):not(:nth-of-type(5)) {
         border-bottom: 1px solid #eaeaea;
     }
 
