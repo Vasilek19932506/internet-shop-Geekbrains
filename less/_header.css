@@ -402,9 +402,8 @@ body {
   width: 19px;
   height: 19px;
 }
-.header-top-right .cart-link:hover .header-top-right .drop-cart {
+.header-top-right .cart-link:hover .drop-cart {
   display: flex;
-  background-color: brown;
 }
 .header-bottom {
   height: 51px;
